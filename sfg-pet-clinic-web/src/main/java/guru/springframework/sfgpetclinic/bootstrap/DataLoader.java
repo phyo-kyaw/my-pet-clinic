@@ -78,7 +78,7 @@ public class DataLoader implements CommandLineRunner {
 //        vet2.getSpecialities().add(savedSurgery);
 
         vetService.save(vet2);
-
+//not getting all vets
         System.out.println("Loaded Vets.... " + vetService.save(vet2).getFirstName() + " " + vetService.findAll().size());
 
     }
