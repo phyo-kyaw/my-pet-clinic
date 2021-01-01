@@ -9,6 +9,7 @@ import java.io.Serializable;
 @MappedSuperclass
 public class BaseEntity implements Serializable {
 
+    //added annotation for JPA
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private Long id;
