@@ -18,7 +18,7 @@ public class Pet extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "owner_id")
-    private Owner Owner;
+    private Owner owner;
 
     @Column( name ="birth_date")
     private LocalDate birthDate;
@@ -42,12 +42,12 @@ public class Pet extends BaseEntity {
         this.petType = petType;
     }
 
-    public guru.springframework.sfgpetclinic.model.Owner getOwner() {
-        return Owner;
+    public Owner getOwner() {
+        return owner;
     }
 
-    public void setOwner(guru.springframework.sfgpetclinic.model.Owner owner) {
-        Owner = owner;
+    public void setOwner(Owner owner) {
+        this.owner = owner;
     }
 
     public LocalDate getBirthDate() {
