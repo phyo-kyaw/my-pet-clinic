@@ -78,7 +78,6 @@ class OwnerSDJpaServiceTest {
 
     @Test
     void findAll() {
-
         Set<Owner> returnedOwnerSet = new HashSet<>();
         returnedOwnerSet.add(Owner.builder().id(1L).build());
         returnedOwnerSet.add(Owner.builder().id(2L).build());
@@ -110,8 +109,6 @@ class OwnerSDJpaServiceTest {
 
     @Test
     void findByLastName() {
-
-
         when(ownerRepository.findByLastName(any())).thenReturn(returnedOwner);
 
         Owner smith = ownerSDJpaService.findByLastName(LAST_NAME);
