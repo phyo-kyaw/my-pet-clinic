@@ -72,8 +72,8 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
+<!--            <plugin>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
 <!--                <dependencies>-->
 <!--                    <dependency>-->
 <!--                        <groupId>org.junit.platform</groupId>-->
@@ -81,7 +81,7 @@
 <!--                        <scope>test</scope>-->
 <!--                    </dependency>-->
 <!--                </dependencies>-->
-            </plugin>
+<!--            </plugin>-->
         </plugins>
     </build>
 
